@@ -67,7 +67,7 @@ const Video = () => {
                             including ad placement, demographic, even the
                             consumer’s mood when they see your ad.{' '}
                         </p>
-                        <Link className="video-bottom__secondLink">
+                        <Link className="video-bottom__secondLink" to="/video">
                             Show more
                         </Link>
                     </div>
