@@ -16,7 +16,7 @@ const Provider = ({ children }) => {
             setImages(json);
             setTimeOut(() => {
                 setLoading(false);
-            }, 2000)
+            }, 5000)
      
         }
         fetchData();
