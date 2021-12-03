@@ -17,7 +17,6 @@ const Provider = ({ children }) => {
             setTimeOut(() => {
                 setLoading(false);
             }, 5000)
-     
         }
         fetchData();
     }, []);
