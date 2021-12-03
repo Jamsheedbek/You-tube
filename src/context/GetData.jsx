@@ -14,7 +14,10 @@ const Provider = ({ children }) => {
             const json = await response.json();
             // ...
             setImages(json);
-            setLoading(false);
+            setTimeOut(() => {
+                setLoading(false);
+            }, 2000)
+     
         }
         fetchData();
     }, []);
