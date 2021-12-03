@@ -33,7 +33,6 @@ const RenderVideos = ({
                     display: 'flex',
                     flexDirection: display,
                     overflow: 'hidden',
-                    height: '100%',
                 }}
             >
                 <SkeletonTheme baseColor="#303030" highlightColor="#444">
