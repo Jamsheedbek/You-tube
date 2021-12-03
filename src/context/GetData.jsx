@@ -5,14 +5,18 @@ const GetData = createContext();
 const Provider = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [images, setImages] = useState([]);
-    useEffect(async () => {
-        const images = await fetch(
-            'https://jsonplaceholder.typicode.com/photos'
-        );
-        const cleanImages = await images.json();
-
-        setImages(cleanImages);
-        setLoading(false);
+    useEffect(() => {
+        async function fetchData() {
+            // You can await here
+            const response = await fetch(
+                'https://jsonplaceholder.typicode.com/photos'
+            );
+            const json = await response.json();
+            // ...
+            setImages(json);
+            setLoading(false);
+        }
+        fetchData();
     }, []);
 
     return (

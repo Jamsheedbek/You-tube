@@ -22,7 +22,6 @@ const RenderVideos = ({
     k = 10,
 }) => {
     const array = useContext(GetData);
-    console.log();
     const Loading = array[1];
 
     const newArray = array[0].splice(n, k);
